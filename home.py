@@ -9,6 +9,7 @@ from dash.dependencies import Input, Output
 import plotly.offline as py     #(version 4.4.1)
 import plotly.graph_objs as go
 import json
+import config
 
 app = dash.Dash(
     __name__,
@@ -17,7 +18,7 @@ app = dash.Dash(
 )
 
 mapbox_access_token = 'pk.eyJ1IjoiZWNhc3RpbGxvdCIsImEiOiJjazk1cWtienowcDIxM2VwdXlnNW9yeXluIn0.mDKOxssrWB_OJeCICgi3yg'
-df = pd.read_csv("/home/ecastillo/git/SGC/SGC_satreps/code/csv/datos-satreps.csv")
+df = pd.read_csv(config.CSV_PATH)
 
 app.title= 'SATREPS'
 
