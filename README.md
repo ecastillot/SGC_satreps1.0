@@ -57,7 +57,8 @@ mapa interactivo se actualiza con los sismos que cumplen los anteriores parámet
 En este punto se debe hacer click en el evento que desea observar la simulación. En la parte inferior
 izquierda se observa un recuadro titulado como **Website**. En dicho recuadro aparece el enlace que va a redirigir a la página de simulación. 
 
-![home & link -> http://10.100.100.11:8050/home](images/stp_link)
+![home & link -> http://10.100.100.11:8050/home](images/stp_link.png)
+
 En la anterior figura se hizo click en un sismo ubicado en lat:2.87969, lon:77.76020 con magnitudde M8.5 y profundidad de 50km. Su respectivo enlace se actualizo en el recuadro y corresponde a la siguiente ruta: /mnt/escenarios/21192022202020_2.87969_77.76020_M8.5_50km/html/21192022202020
 
 Al hacer click en el enlace se observa la siguiente simulación:
@@ -75,4 +76,5 @@ Por último, si se da click en 'source model SWIFT 1' o 'source model SWIFT 2' s
 
 - Emmanuel Castillo ecastillo@sgc.gov.co
 - Angel agudelo adagudelo@sgc.gov.co
+
 24-08-2020
