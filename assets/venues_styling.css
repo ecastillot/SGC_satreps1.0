@@ -15,7 +15,6 @@
 - Media Queries
 */
 
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -351,6 +350,7 @@ ol {
   color:rgb(13, 14, 15);
   background-color: #CCFF99;
   font-weight: bold;
+  text-align: center;
 }
 .go_to_satreps {
   color:rgb(13, 14, 15);
@@ -395,6 +395,21 @@ hr {
   clear: both; }
 
 
+/* imagees
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.image_src01 {
+  height: 75px;
+  margin: 0px -10px 10px;
+  border-radius: 2px
+}
+.image_src01 Img{
+  position: relative;
+  float: right;
+  right: 10px;
+  height:75px;
+}
+/* -––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -419,3 +434,4 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
