@@ -164,18 +164,19 @@ def display_click_data(clickData):
         
         the_link = clickData['points'][0]['customdata'].strip()
         html_folder = the_link.split('_')[0]
-        static_folder = os.path.join('/mnt','escenarios',
+        html_file = html_folder + "_mts.html"
+        static_folder = os.path.join('http://10.100.100.11:8090',
                                     the_link,
                                     'html',
-                                    html_folder)
+                                    html_folder,html_file )
         if the_link is None:
             return 'No Website Available'
         else:
-            # return html.A(the_link, href=the_link, target="_blank")
-            cfg_dict = {'static_folder': str(static_folder)}
-            with open("config.json", "w") as cfg:  
-                json.dump(cfg_dict, cfg) 
-            return html.A(static_folder, href='escenario', target="_blank")
+        #     # return html.A(the_link, href=the_link, target="_blank")
+        #     cfg_dict = {'static_folder': str(static_folder)}
+        #     with open("config.json", "w") as cfg:  
+        #         json.dump(cfg_dict, cfg) 
+            return html.A(static_folder, href=static_folder, target="_blank")
 # #--------------------------------------------------------------
 
 
